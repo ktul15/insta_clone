@@ -85,7 +85,7 @@ const UserController = {
        }
  
        if (!user) {
-         return res.status(401).json({ error: 'Invalid credentials' });
+         return res.status(401).json({ error: 'No user found with this credentials.' });
        }
 
         // If user exists, validate the password
